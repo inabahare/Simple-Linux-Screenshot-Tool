@@ -1,0 +1,14 @@
+#!/bin/bash
+# Check parameters
+if [ "$1" = "" ]; then
+    	echo "You need to set a save path"
+	exit 1;
+fi
+
+
+NOW=$(date +"%F %H-%M-%S")
+SAVEPATH="$1/$NOW"
+
+# Take screenshot anc copy to clipboard
+import "$SAVEPATH.png"
+xclip -selection clipboard -t image/png -i "$SAVEPATH.png"
