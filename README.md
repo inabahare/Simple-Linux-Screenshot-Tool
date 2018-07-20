@@ -1,6 +1,11 @@
 # Simple-Linux-Screenshot-Tool
 Just a simple tool to take screenshots when using Linux
 
+# What does it do?
+1. Takes a screenshot
+1. Saves said screenshot to a custom dir
+1. Puts the just taken screenshot in your clipboard
+
 # What to I need?
 * imagemagic (import)
 * xclip
