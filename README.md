@@ -7,11 +7,11 @@ Just a simple tool to take screenshots when using Linux
 1. Puts the just taken screenshot in your clipboard
 
 # What to I need?
-* imagemagic (import)
+* scrot
 * xclip
 
 # Where to put it?
-/usr/local/bin
+/usr/local/bin 
 
 # How to use it?
 1. `screenshot /path/to/save/directory` In your terminal

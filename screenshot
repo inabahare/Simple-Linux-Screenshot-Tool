@@ -7,8 +7,9 @@ fi
 
 
 NOW=$(date +"%F %H-%M-%S")
-SAVEPATH="$1/$NOW"
+SAVEPATH="$1/$NOW.png"
 
 # Take screenshot anc copy to clipboard
-import "$SAVEPATH.png"
-xclip -selection clipboard -t image/png -i "$SAVEPATH.png"
+scrot -s "$NOW.png" 
+mv "$NOW.png" "$SAVEPATH"
+xclip -selection clipboard -t image/png -i "$SAVEPATH"
